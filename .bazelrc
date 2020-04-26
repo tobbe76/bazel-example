@@ -1,0 +1,5 @@
+startup --host_jvm_args="-Dbazel.windows_unix_root=C:/Devtools/Install/Cygwin/3.0.7"
+startup --output_user_root=c:/PE_Builds/bzl_output
+build --crosstool_top=//tools/cc_toolchains:toolchain
+build --compiler=cygwin_gcc
+build --cpu=x64_windows
